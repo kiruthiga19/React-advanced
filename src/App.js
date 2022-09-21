@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import RefsDemo from './RefsDemo';
+import FocusInput from './FocusInput';
+import FRParentinput from './FRParentinput';
+import PortalDemo from './PortalDemo';
+import Hero from './Hero';
+import ErrBoundary from './ErrBoundary';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <PortalDemo></PortalDemo> */}
+      <ErrBoundary>
+      <Hero heroname='batman'></Hero>
+      </ErrBoundary>
+      <ErrBoundary>
+      <Hero heroname='supper man'></Hero>
+      </ErrBoundary>
+      <ErrBoundary>
+      <Hero heroname='joker'></Hero>
+      </ErrBoundary>
+      {/* <FRParentinput></FRParentinput> */}
+      {/* <FocusInput></FocusInput> */}
+     {/* <RefsDemo></RefsDemo> */}
     </div>
   );
 }
