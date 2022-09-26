@@ -13,7 +13,7 @@ function CounterTwo() {
       count: {count}
       <button onClick={() => setCount(initialcount)}>Reset</button>
       <button onClick={()=> setCount(count + 1)}>Increment</button>
-      <button onClick={()=> setCount(count -1)}>Decrement</button>
+      <button onClick={()=> setCount(count -1)}>Decrement</button >
       <button onClick={incrementfive}>increment5</button>
     </div>
   )
